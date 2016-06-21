@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/styles.css">
+
+        <script src="js/lib/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <div id="contacts">
+            <header>
+                <div id="filter"><label>Show me:</label></div>
+            </header>
+        </div>
+        <script id="contactTemplate" type="text/template">
+            <img src="<%= photo %>" alt="<%= name %>" />
+            <h1><%= name %><span><%= type %></span></h1>
+            <div><%= address %></div>
+            <dl>
+                <dt>Tel:</dt><dd><%= tel %></dd>
+                <dt>Email:</dt><dd><a href="mailto:<%= email %>"><%= email %></a></dd>
+            </dl>
+        </script>
+
+        <script src="js/lib/jquery-min.js"></script>
+        <script src="js/lib/underscore-min.js"></script>
+        <script src="js/lib/backbone-min.js"></script>
+        <script src="js/lib/mustache.js"></script>
+
+        <script type="text/javascript" src="js/router.js"></script>
+        <script type="text/javascript" src="js/contactsView.js"></script>
+        <script type="text/javascript" src="js/contactView.js"></script>
+        <script type="text/javascript" src="js/contact.js"></script>
+        <script type="text/javascript" src="js/contacts.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
